@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 40px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #61161653;
+    color: #342124;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 560px;
+    padding: 36px;
+    background: white;
+    border: 1px solid #ead9d7;
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(80, 24, 38, 0.10);
+}
+
+.form-header {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.eyebrow {
+    margin-bottom: 8px;
+    color: #8b263d;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin: 0 0 10px;
+    color: #681c32;
+    font-size: 30px;
+}
+
+.subtitle {
+    margin: 0;
+    color: #806d70;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.form-group {
+    margin-bottom: 19px;
+}
+
+.form-group > label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4b2931;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 12px 13px;
+    border: 1px solid #d9c6c8;
+    border-radius: 8px;
+    outline: none;
+    background: #fffdfd;
+    color: #342124;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus {
+    border-color: #8b263d;
+    box-shadow: 0 0 0 3px rgba(139, 38, 61, 0.10);
+}
+
+input.invalid,
+select.invalid {
+    border: 1px solid #c62828;
+    background: #fffafa;
+}
+
+.error-message {
+    display: block;
+    margin-top: 5px;
+    color: #c62828;
+    font-size: 12px;
+}
+
+.option-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+}
+
+.choice {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #5e4a4e;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.choice input {
+    accent-color: #7b2038;
+}
+
+button {
+    width: 100%;
+    margin-top: 4px;
+    padding: 14px;
+    border: none;
+    border-radius: 9px;
+    background: #7b2038;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5e172a;
+}
+
+.success-message {
+    margin-top: 14px;
+    color: #267044;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .option-list {
+        gap: 12px;
+    }
+}
